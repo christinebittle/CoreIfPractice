@@ -87,7 +87,7 @@ namespace IfPractice.Controllers
         /// <summary>
         /// A knight piece sits alone on square F4, and wants to move. A knight can move two ways:
         /// 1) two squares left OR right AND one square up OR down
-        /// 2) one square left OR right AND one square up OR down
+        /// 2) one square left OR right AND two squares up OR down
         /// </summary>
         /// <param name="Row">The desired row. One of (a,b,c,d,e,f,g,h)</param>
         /// <param name="Col">The desired column. One of (1,2,3,4,5,6,7,8)</param>

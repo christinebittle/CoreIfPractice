@@ -103,8 +103,7 @@ namespace IfPractice.Controllers
         /// <example>
         //      GET : api/IfPractice/Power/2/4     ->      16
         //  </example>
-        [HttpGet]
-        [Route("Power/{numberBase}/{numberExponent}")]
+        [HttpGet(template:"Power/{numberBase}/{numberExponent}")]
         public double Power(double numberBase, double numberExponent)
         {
             double power = Math.Pow(numberBase, numberExponent);
@@ -129,8 +128,7 @@ namespace IfPractice.Controllers
         /// <example>
         ///     GET api/IfPractice/CoinComputer/100/20/2/4/0	-> TRUE
         /// </example>
-        [HttpGet]
-        [Route("CoinComputer/{Nickels}/{Dimes}/{Quarters}/{Loonies}/{Toonies}")]
+        [HttpGet(template:"CoinComputer/{Nickels}/{Dimes}/{Quarters}/{Loonies}/{Toonies}")]
         public bool CoinComputer(int Nickels, int Dimes, int Quarters, int Loonies, int Toonies)
         {
             //Declare value of Toy as well as value of coins
@@ -171,8 +169,10 @@ namespace IfPractice.Controllers
         /// <example>
         ///     GET api/IfPractice/PointQuadrant/0/10	->	0
         /// </example>
-        [HttpGet]
-        [Route("PointQuadrant/{x}/{y}")]
+        /// <remarks>
+        /// Learn more about quadrants: For the exercise that deals with points and quadrants, see https://www.purplemath.com/modules/plane3.htm
+        /// </remarks>
+        [HttpGet(template:"PointQuadrant/{x}/{y}")]
         public int PointQuadrant(int x, int y)
         {
             //Value which we will return indicating the quadrant #

@@ -33,7 +33,7 @@ namespace IfPractice.Controllers
         }
 
         /// <summary>
-        /// recommends how to move the box given the box weight
+        /// recommends how to move the box given the box weight.
         /// </summary>
         /// <returns>gives a recommendation on how to move the box in different circumstances of the weight</returns>
         /// <param name="BoxWeight">The input weight in kg</param>

@@ -11,9 +11,9 @@ namespace IfPractice.Controllers
         /// <summary>
         /// Determines if 3 angles can make a triangle.
         /// </summary>
-        /// <param name="angle1">The first angle of the triangle.</param>
-        /// <param name="angle2">The second angle of the triangle.</param>
-        /// <param name="angle3">The third angle of the triangle.</param>
+        /// <param name="angle1">The first angle of the triangle in degrees.</param>
+        /// <param name="angle2">The second angle of the triangle in degrees.</param>
+        /// <param name="angle3">The third angle of the triangle in degrees.</param>
         /// <returns>TRUE if the angles can make a triangle. FALSE otherwise.</returns>
         /// <example>
         ///     GET : /api/IfPractice/ValidTriangle/60/60/60 -> TRUE

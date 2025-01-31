@@ -7,7 +7,7 @@ namespace IfPractice.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class IfPracticeSectionA : ControllerBase
+    public class IfPracticeF2024A : ControllerBase
     {
 
         /// <summary>
